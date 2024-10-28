@@ -14,6 +14,9 @@ const useStore = create<BearType>()((set, get) => {
         1000
       );
     },
+    fishes: 0,
+    incrementFishes: () => set((preState) => ({ fishes: preState.fishes + 1 })),
+    resetFishes: () => set({ fishes: 0 }),
   };
 });
 

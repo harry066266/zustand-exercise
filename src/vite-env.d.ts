@@ -5,4 +5,8 @@ type BearType = {
   resetBears: () => void;
   decrementBearByStep: (step?: number) => void;
   asyncIncrementBears: () => void;
+
+  fishes: number;
+  incrementFishes: () => void;
+  resetFishes: () => void;
 };
